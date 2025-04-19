@@ -19,32 +19,36 @@
   color: #0077b6; /* Blue */
 }
 
-/* Hero Image Fix */
-.hero-bg img.img-full-bg {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  object-position: right center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 0;
+.hero {
+  position: relative;
+  overflow: hidden;
 }
 
-/* Text should always sit above the image */
-.hero-text-wrapper {
+.hero-background {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/ktech-hero2-test2.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 1;
+}
+
+/* Make sure your text stays on top */
+.hero .container {
   position: relative;
   z-index: 2;
 }
 
-/* Ensure mobile image shows more left of the image */
-@media (max-width: 768px) {
-  .hero-bg img.img-full-bg {
-    object-position: center center;
-  }
-
-  .hero-text-wrapper {
-    padding-top: 6rem;
-    text-align: center;
-  }
+/* Optional: For dark overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* optional overlay */
+  z-index: 1;
 }
