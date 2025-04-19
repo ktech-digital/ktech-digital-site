@@ -1,3 +1,39 @@
+/* Base logo tweaks */
+.header .logo h1.sitename {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.header {
+  padding: 0.8rem 0;
+  transition: all 0.3s ease;
+}
+
+/* Slim header on scroll (if sticky behavior is implemented) */
+.header.header-scrolled {
+  padding: 0.4rem 0;
+}
+
+/* Slim header and logo on smaller screens */
+@media (max-width: 768px) {
+  .header .logo h1.sitename {
+    font-size: 1.1rem;
+  }
+
+  .header {
+    padding: 0.5rem 0;
+  }
+
+  .hero .hero-content {
+      padding-top: 10vh; /* Adjust this value as needed (e.g. 30vh, 35vh) */
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
 /* Base */
 .btn-get-started {
   background-color: #0077b6;
