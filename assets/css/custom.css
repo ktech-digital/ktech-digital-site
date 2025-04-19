@@ -1,3 +1,41 @@
+:root {
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #2b180d; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #1b2f45; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #56b8e6; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+/**
+* Template Name: Nova
+* Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
+* Updated: Aug 07 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
+/* Fonts */
+:root {
+  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Montserrat",  sans-serif;
+  --nav-font: "Raleway",  sans-serif;
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: rgba(255, 255, 255, 0.6);  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #56b8e6; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
 /* Base logo tweaks */
 .header .logo h1.sitename {
   font-size: 1.4rem;
@@ -28,10 +66,6 @@
   .hero .hero-content {
       padding-top: 30vh; /* Adjust this value as needed (e.g. 30vh, 35vh) */
     }
-}
-
-@media (max-width: 768px) {
-
 }
 
 /* Base */
@@ -105,3 +139,42 @@
   background: rgba(0, 0, 0, 0.3);
   z-index: 2;
 }
+
+.btn-get-started {
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: var(--accent-color);
+  text-align: center;
+  text-decoration: none;
+}
+
+.quote-box {
+  background: #f8f9fa;
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid var(--accent-color);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Apply consistent font and color styles to About section */
+.about p,
+.about li {
+  font-family: var(--default-font);
+  color: var(--default-color);
+  font-size: 16px;
+}
+
+.about h2,
+.about h4 {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+}
+
+

@@ -18,7 +18,7 @@
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #2b180d; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #1b2f45; /* Color for headings, subheadings and title throughout the website */
@@ -2446,3 +2446,4 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
