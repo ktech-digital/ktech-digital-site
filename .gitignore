@@ -1,0 +1,28 @@
+# Node (if using npm later for Bootstrap tools)
+node_modules/
+npm-debug.log*
+
+# macOS system files
+.DS_Store
+
+# VS Code workspace
+.vscode/
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+out/
+
+# Optional system backup files
+*.log
+*.bak
+*.tmp
+*.swp
+
+# Build folders (if using SCSS/JS tooling later)
+dist/
+build/
+
+# GitHub Pages config (optional to ignore user-specific)
+.env
+.env.*

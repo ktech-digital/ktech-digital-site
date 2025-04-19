@@ -1,0 +1,81 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  background: #f5f5f5;
+}
+
+header {
+  background: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  max-height: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  color: #666;
+  margin-top: 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+section.campaign {
+  background: #e7f7f1;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: #ff6f61;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+section.projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+section.projects li {
+  margin-bottom: 1rem;
+}
+
+.products {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.product {
+  background: #fff;
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+a.back {
+  display: block;
+  margin: 1rem;
+  text-decoration: none;
+  color: #666;
+}
