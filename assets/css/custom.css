@@ -202,3 +202,23 @@
   background-attachment: scroll;
   position: relative;
 }
+
+/* For medium-sized screens like iPads */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .service-item .badge {
+    top: -15px; /* Bring it down slightly to avoid overlap */
+  }
+}
+
+.service-item .badge {
+  top: -10px; /* move badge slightly up */
+  right: 10px; /* offset a little from the edge */
+  z-index: 2;  /* keep above content */
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .service-item .badge {
+    top: -50px;
+    right: 8px;
+  }
+}
