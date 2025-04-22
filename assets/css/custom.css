@@ -229,4 +229,19 @@
     top: -50px;
     right: 8px;
   }
+
+}
+
+/* --- Uniform blog‑card thumbnails ------------------------- */
+.recent-posts .post-box .post-img {
+  /* pick a size you like; 240px matches the template */
+  height: 240px;              /* <- keeps all cards equal height   */
+  overflow: hidden;           /* <- anything taller is cropped     */
+}
+
+.recent-posts .post-box .post-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* <- fills the box, centre‑cropped  */
+  object-position: center;    /* optional: focus on the centre     */
 }
