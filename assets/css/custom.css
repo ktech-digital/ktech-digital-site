@@ -118,6 +118,14 @@
   background-position: center right;
 }
 
+@media (min-width: 1024px) {
+  .hero-background {
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+  }
+}
+
 .hero-background-mobile {
   background-image: url('../img/hero-mobile.webp');
   background-position: center center;
