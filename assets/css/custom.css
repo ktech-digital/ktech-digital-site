@@ -247,9 +247,22 @@
 }
 
 @media (max-width: 768px) {
-  .blog-details .container,
+  .blog-details .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
   .blog-details .row {
-    --bs-gutter-x: 0; /* Remove horizontal gutter */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .blog-details .container .article {
+    padding: 5px !important;
+  }
+
+  .blog-details .col-lg-8,
+  .blog-details .col-lg-4 {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
