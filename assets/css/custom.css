@@ -245,3 +245,12 @@
   object-fit: cover;          /* <- fills the box, centre‑cropped  */
   object-position: center;    /* optional: focus on the centre     */
 }
+
+@media (max-width: 768px) {
+  .blog-details .container,
+  .blog-details .row {
+    --bs-gutter-x: 0; /* Remove horizontal gutter */
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
