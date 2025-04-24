@@ -3,30 +3,26 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <!-- Sitemap manually optimized for SEO: KTech Digital -->
 
   <url>
-    <loc>https://ktech-digital.com/</loc>
+    <loc>https://www.ktech-digital.com/</loc>
     <lastmod>2025-04-22T23:56:20+00:00</lastmod>
     <priority>1.00</priority>
   </url>
+
   <url>
-    <loc>https://ktech-digital.com/blog/why-we-are-doing-this.html</loc>
+    <loc>https://www.ktech-digital.com/blog/why-we-are-doing-this.html</loc>
     <lastmod>2025-04-22T23:56:20+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://ktech-digital.com/index.html</loc>
-    <lastmod>2025-04-22T23:56:20+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://ktech-digital.com/blog.html</loc>
-    <lastmod>2025-04-22T23:56:20+00:00</lastmod>
-    <priority>0.64</priority>
+    <priority>0.90</priority>
   </url>
 
+  <url>
+    <loc>https://www.ktech-digital.com/blog.html</loc>
+    <lastmod>2025-04-22T23:56:20+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
 
 </urlset>
