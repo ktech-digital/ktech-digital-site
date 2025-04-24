@@ -112,17 +112,17 @@
 
 .hero-background {
   background-image: url('../img/hero-full.webp');
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center right;
 }
 
-@media (min-width: 1024px) {
+/* Ensure desktop image stays fixed in size from 768px and up */
+@media (min-width: 768px) {
   .hero-background {
-    background-size: contain;
-    background-position: center right;
+    background-size: auto 100%; /* Lock height, let width scale */
     background-repeat: no-repeat;
+    background-position: right center;
   }
 }
 
@@ -274,6 +274,7 @@
 }
 
 .hero-background-mobile {
+  background-size: 100% auto;
   background-size: cover;
   background-position: center;
   min-height: 100vh;

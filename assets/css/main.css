@@ -734,7 +734,7 @@ section,
   .hero:after {
     position: absolute;
     content: "";
-    width: 44%;
+    width: 50%;
     background-image: linear-gradient(180deg, color-mix(in srgb, var(--background-color), transparent 15%), color-mix(in srgb, var(--background-color), transparent 15%) 100%), linear-gradient(180deg, rgb(0, 0, 0), rgb(0, 0, 0) 100%);
     top: 0;
     bottom: 0;
