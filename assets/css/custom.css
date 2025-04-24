@@ -267,3 +267,14 @@
     padding-right: 0 !important;
   }
 }
+
+/* Fix hero zoom flash issue on mobile */
+.hero.section {
+  min-height: 100vh;
+}
+
+.hero-background-mobile {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
