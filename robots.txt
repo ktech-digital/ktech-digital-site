@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.ktech-digital.com/sitemap.xml
+Sitemap: https://ktech-digital.com/sitemap.xml
