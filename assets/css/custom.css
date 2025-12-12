@@ -311,10 +311,66 @@
     transform: scale(1.02);
 }
 
-/*
-.lunalife-screens-wrapper img {
-    max-height: 75vh;
-    width: 100%;
-    object-fit: contain;
+/* Base: remove stock borders / shadows */
+.lunalife-accordion {
+    max-width: 720px;
+    margin: 0 auto;
 }
-*/
+
+/* Less gap between cards */
+.lunalife-accordion .accordion-item {
+    border: none !important;
+    background: transparent;
+    margin-bottom: 0.4rem;   /* was 0.75rem */
+}
+
+/* More compact header */
+.lunalife-accordion .accordion-button {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0.55rem 0.9rem;  /* was 0.8rem 1.1rem */
+    border-radius: 12px !important;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+/* Same look when opened */
+.lunalife-accordion .accordion-button:not(.collapsed) {
+    background-color: #ffffff !important;
+}
+
+/* Softer, tighter shadow */
+.lunalife-accordion .accordion-button {
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.05);  /* was 0 6px 18px ... */
+}
+
+/* Body: keep it compact too */
+.lunalife-accordion .accordion-collapse {
+    border: none;
+}
+
+.lunalife-accordion .accordion-body {
+    background-color: #ffffff;
+    padding: 0.6rem 0.9rem;  /* slightly less everywhere */
+    border-radius: 0 0 12px 12px;
+    border-top: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+/* Compact heading spacing */
+.lunalife-accordion .accordion-header {
+    margin: 0;
+}
+
+/* No extra gaps inside body text */
+.lunalife-accordion .accordion-body p {
+    margin-bottom: 0;
+}
+
+/* Mobile: also slightly tighter */
+@media (max-width: 767.98px) {
+    .lunalife-accordion .accordion-item {
+        margin-bottom: 0;   /* was 0.6rem */
+    }
+}
+
