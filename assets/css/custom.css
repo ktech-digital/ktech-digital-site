@@ -419,5 +419,23 @@
     font-size: 0.95rem;
 }
 
+/* swiper pagination dots */
+/* Base bullets */
+.lunalife-screens-wrapper .swiper-pagination-bullet {
+    background-color: #d5d5d5;   /* passive bullet */
+    opacity: 1;                  /* make visible */
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;        /* pills/circles */
+    margin: 0 4px !important;
+}
+
+/* Active bullet in LunaLife CTA colour */
+.lunalife-screens-wrapper .swiper-pagination-bullet-active {
+    background-color: #EBB44C;
+    width: 18px;
+    transition: width 0.2s ease, background-color 0.2s ease;
+}
+
 
 

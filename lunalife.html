@@ -407,7 +407,7 @@
                                     <h2>Как выглядит LunaLife — скриншоты</h2>
 
                                     <div class="lunalife-screens-wrapper">
-                                        <div class="swiper mySwiper mb-4">
+                                        <div id="lunalifeScreensSwiper" class="swiper mySwiper mb-4">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
                                                     <img src="/assets/img/lunalife/screens/1_res.webp"
@@ -743,25 +743,29 @@
 <!-- Screenshot image carousel -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-      if (typeof Swiper !== 'undefined') {
-        new Swiper('.mySwiper', {
-          loop: true,
-          slidesPerView: 1,
-          spaceBetween: 0,
-          autoHeight: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-          },
-          autoplay: {
-            delay: 2500,            // 2.5s per slide
-            disableOnInteraction: false
-          }
-        });
-      }
+      if (!window.Swiper) return;
+
+      var container = document.getElementById('lunalifeScreensSwiper');
+      if (!container) return;
+
+      var paginationEl = container.querySelector('.swiper-pagination');
+
+      new Swiper(container, {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        autoHeight: true,
+        pagination: {
+          el: paginationEl,
+          clickable: true
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false
+        }
+      });
     });
 </script>
-
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
