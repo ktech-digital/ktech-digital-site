@@ -746,12 +746,29 @@
     document.addEventListener('DOMContentLoaded', function () {
       if (!window.Swiper) return;
 
-      var container = document.getElementById('lunalifeScreensSwiper');
+      // Find exactly your LunaLife swiper
+      var container = document.querySelector('.lunalife-screens-wrapper .mySwiper');
       if (!container) return;
 
       var paginationEl = container.querySelector('.swiper-pagination');
 
-      new Swiper(container, {
+      function updateBullets(swiper) {
+        if (!paginationEl) return;
+        var bullets = paginationEl.querySelectorAll('.swiper-pagination-bullet');
+        if (!bullets.length) return;
+
+        bullets.forEach(function (b) {
+          b.classList.remove('swiper-pagination-bullet-active');
+        });
+
+        // Prefer realIndex (ignores loop clones), fall back to activeIndex
+        var idx = typeof swiper.realIndex === 'number' ? swiper.realIndex : swiper.activeIndex || 0;
+        if (bullets[idx]) {
+          bullets[idx].classList.add('swiper-pagination-bullet-active');
+        }
+      }
+
+      var swiper = new Swiper(container, {
         loop: true,
         slidesPerView: 1,
         spaceBetween: 0,
@@ -763,10 +780,19 @@
         autoplay: {
           delay: 2500,
           disableOnInteraction: false
+        },
+        on: {
+          init: function () {
+            updateBullets(this);
+          },
+          slideChange: function () {
+            updateBullets(this);
+          }
         }
       });
     });
 </script>
+
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
