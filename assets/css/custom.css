@@ -279,3 +279,42 @@
   background-position: center;
   min-height: 100vh;
 }
+
+/* Always keep image responsive */
+.mySwiper .swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Mobile: full width of the page (no change) */
+.lunalife-screens-wrapper {
+  width: 100%;
+}
+
+/* Tablet + Desktop: make the block visually smaller */
+@media (min-width: 768px) {
+  .lunalife-screens-wrapper {
+    max-width: 420px;   /* try 420–480px */
+    margin: 0 auto 2rem; /* center + spacing */
+  }
+}
+
+.video-preview-container img {
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    transition: transform 0.2s ease;
+}
+
+.video-preview-container:hover img {
+    transform: scale(1.02);
+}
+
+/*
+.lunalife-screens-wrapper img {
+    max-height: 75vh;
+    width: 100%;
+    object-fit: contain;
+}
+*/
