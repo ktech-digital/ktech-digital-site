@@ -437,5 +437,10 @@
     transition: width 0.2s ease, background-color 0.2s ease;
 }
 
+/* youtube video */
+.video-preview-link:hover .video-play-button {
+    transform: translate(-50%, -50%) scale(1.08);
+}
+
 
 
