@@ -442,5 +442,12 @@
     transform: translate(-50%, -50%) scale(1.08);
 }
 
+.lunalife-project-socials {
+  padding-top: 12px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  opacity: 0.95;
+}
+
+
 
 
