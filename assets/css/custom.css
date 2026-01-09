@@ -448,6 +448,99 @@
   opacity: 0.95;
 }
 
+/* cards */
+/* LunaLife decision junction */
+.ll-junction {
+  padding: 18px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(11,15,26,0.35), rgba(21,26,37,0.25));
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.ll-junction-kicker {
+  margin: 0;
+  color: rgba(255,255,255,0.82);
+  font-weight: 600;
+  letter-spacing: 0.1px;
+}
+
+/* Card style */
+.ll-card {
+  padding: 18px 16px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(11,15,26,0.55), rgba(21,26,37,0.35));
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.25);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.ll-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,0.16);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.30);
+}
+
+.ll-card-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 10px;
+}
+
+.ll-card-title {
+  font-size: 1.05rem;
+  margin: 0 0 6px 0;
+  color: rgba(255,255,255,0.92);
+}
+
+.ll-card-text {
+  margin: 0 0 14px 0;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.45;
+}
+
+.ll-card-actions {
+  margin-top: auto;
+}
+
+.ll-card-note {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.55);
+}
+
+/* Buttons */
+.ll-btn {
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-weight: 600;
+}
+
+.ll-btn-outline {
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-weight: 600;
+  border-color: rgba(255,255,255,0.22) !important;
+  color: rgba(255,255,255,0.92) !important;
+  background: rgba(255,255,255,0.04) !important;
+}
+
+.ll-btn-outline:hover {
+  border-color: rgba(255,255,255,0.34) !important;
+  background: rgba(255,255,255,0.07) !important;
+}
+
+/* Mobile spacing */
+@media (max-width: 576px) {
+  .ll-junction { padding: 14px; }
+  .ll-card { padding: 16px 14px; }
+}
+
 
 
 
