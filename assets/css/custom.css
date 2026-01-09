@@ -541,6 +541,10 @@
   .ll-card { padding: 16px 14px; }
 }
 
+/* lunalife page specifics */
+#lunalife-details {
+  margin-top: -60px; /* try -16px to -40px */
+}
 
 
 
