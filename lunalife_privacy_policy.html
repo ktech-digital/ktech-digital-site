@@ -17,82 +17,118 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p><strong>Effective date:</strong> 16 August 2025</p>
-<p><strong>LunaLife</strong> (“we”, “our” or “us”) respects your privacy. This Privacy Policy explains how the LunaLife mobile application (“App”) processes your data.</p>
+<p><strong>Effective date:</strong> 21 August 2025</p>
+<p><strong>Last updated:</strong> 8 December 2025</p>
+
+<p><strong>LunaLife</strong> ("we", "our", or "us") respects your privacy. This Privacy Policy explains how the LunaLife mobile application and web version ("App") process your data.</p>
 
 <h2>1. Information we do not collect</h2>
-<p>We <strong>do not collect</strong>, store, or transmit contact details (name, email, phone), location data, contacts/calendar content, or the <strong>Advertising ID (AD_ID)</strong>. The App contains no third-party advertising and does not use advertising trackers or analytics SDKs.</p>
+<p>We <strong>do not collect</strong>, store, or transmit contact details (name, phone number), location data, contacts/calendar content, or the <strong>Advertising ID (AD_ID)</strong>. The App contains no third-party advertising and does not use advertising trackers or analytics SDKs.</p>
 <ul>
-    <li>names, email addresses, or phone numbers;</li>
+    <li>names or phone numbers;</li>
     <li>location data;</li>
     <li>access to contacts or calendar;</li>
     <li>advertising identifiers (AD_ID) or behavioural analytics.</li>
 </ul>
-<p><em>Exception:</em> strictly necessary technical data from the stores (Apple/Google) and RevenueCat are processed for subscriptions — see Section&nbsp;2.</p>
+
+<p><em>Exceptions:</em></p>
+<ul>
+    <li>In the web version, an <strong>email-based account</strong> is created for sign-in and access recovery. In the mobile version, no separate account is created.</li>
+    <li>User notes saved in the App may be stored <strong>unencrypted</strong> locally or in the cloud for synchronisation.</li>
+</ul>
+
+<p>Strictly necessary technical data from the stores (Apple/Google), RevenueCat, and Stripe are processed for subscriptions.</p>
 
 <h2>2. Subscriptions and RevenueCat</h2>
-<p>We use <strong>RevenueCat</strong> to handle subscriptions. RevenueCat interacts with the Apple App Store and Google Play Store to verify purchases and manage subscription status. In this process, the following may be processed:</p>
+<p>We use <strong>RevenueCat</strong> to process subscriptions. RevenueCat interacts with the Apple App Store, Google Play Store, and Stripe (for web payments) to verify purchases and manage subscription status. In this process, the following may be processed:</p>
 <ul>
-    <li><strong>purchase tokens/transaction identifiers</strong> provided by the App Store/Google Play;</li>
+    <li><strong>purchase tokens/transaction identifiers</strong> provided by the App Store / Google Play / Stripe;</li>
     <li><strong>subscription status</strong> (active/cancelled, start/end dates, period, pricing/currency/country information);</li>
-    <li><strong>SDK technical information</strong> required to verify purchases and restore access (e.g., OS version/device model);</li>
+    <li><strong>SDK technical information</strong> required to verify purchases and restore access (for example, OS version/device model and browser type in the web version);</li>
     <li>real-time subscription event notifications from Google Play (RTDN), containing subscription state only.</li>
 </ul>
 <p>We do not use this data for targeted advertising or profiling beyond what is necessary to operate subscriptions.</p>
 <p>For details on RevenueCat’s processing, see their <a href="https://www.revenuecat.com/privacy" target="_blank">Privacy Policy</a>.</p>
 
-<h2>3. Offline operation</h2>
-<p>The App can operate <strong>fully offline</strong> using data stored on your device. Internet connectivity is required to purchase/restore a subscription, open external links (e.g., this Policy or Terms), and — in the future — to fetch updated lunar data from our servers.</p>
+<h2>2.1. Web payments via Stripe</h2>
+<p>When subscribing through the web version, payments are processed <strong>exclusively by Stripe</strong> via RevenueCat Billing Playground. We do not see or store bank card details.</p>
+<p>Stripe may process:</p>
+<ul>
+    <li>the email address provided during payment;</li>
+    <li>payment status and transaction history;</li>
+    <li>payment country, IP address, and technical device parameters.</li>
+</ul>
+<p>Refunds, subscription cancellations, and trial-period terms are governed exclusively by the rules of the store or platform through which the purchase was made (Apple App Store, Google Play, or Stripe for the web version). LunaLife may offer trial periods (for example, 3 days for a monthly subscription and 7 days for an annual subscription) in accordance with KTECH DIGITAL LTD billing settings in RevenueCat. If you do not cancel before the trial period ends, the subscription will automatically become paid.</p>
 
-<h2>4. Crash reports (App Store and Google Play)</h2>
-<p>We may receive <strong>anonymous crash reports</strong> automatically provided by the Apple App Store and Google Play Store. These reports are used solely to improve stability and performance and may include:</p>
+<h2>3. Online operation</h2>
+<p>LunaLife requires an <strong>internet connection</strong> to load data, operate the subscription mechanism, sign in to an account, synchronise information, and display content correctly.</p>
+<p>Some interface elements may continue to appear during a temporary loss of connection, but full operation of the App without internet access is <strong>not guaranteed</strong>.</p>
+
+<h2>4. Crash reports (App Store, Google Play, Firebase)</h2>
+<p>We may receive <strong>anonymous crash reports</strong> automatically provided by the Apple App Store, Google Play Store, and Firebase services (for example, Firebase Crashlytics). These reports are used exclusively to improve stability and performance and may contain technical data such as:</p>
 <ul>
     <li>device model;</li>
     <li>operating system version;</li>
-    <li>technical logs (stack traces).</li>
+    <li>technical logs (stack traces);</li>
+    <li>app performance data (if Firebase Performance Monitoring is enabled);</li>
+    <li>information about crashes and failures.</li>
 </ul>
-<p>No personal information is included in these reports.</p>
+<p>No personal information is included in these reports. Firebase Hosting is used only for secure delivery of the web version and does not collect personal data.</p>
 
 <h2>5. Third-party services</h2>
-<p>The LunaLife App does not use third-party advertising or analytics SDKs, except for RevenueCat which is used exclusively to manage subscriptions. The Advertising ID (AD_ID) is not requested or used.</p>
+<p>The LunaLife App does not use third-party advertising or analytics SDKs, except for RevenueCat and Stripe, which are used exclusively for subscription management and payment processing. The Advertising ID (AD_ID) is not requested or used.</p>
 
 <h2>6. Data security</h2>
-<p>We follow data minimisation principles and use providers that protect data in transit and at rest (e.g., encrypted transport). All information about your App usage remains on your device, except for technical subscription data provided via the App Store/Google Play with RevenueCat.</p>
+<p>We apply data minimisation principles and use providers that protect technical data during transmission and storage.</p>
+
+<h2>6.1. User notes and AI analysis</h2>
+<p>If you use the notes feature, their content may be stored locally or in the cloud. We may use <strong>automated AI-based analysis of notes</strong> exclusively for personal in-app features such as prompts, recommendations, self-reflection, and improving the user experience. <strong>Notes are never shared with third parties, never used for advertising, never sold, and never used outside your personal functionality within the App.</strong></p>
 
 <h2>7. Legal bases for processing</h2>
 <p>We process data under the following UK GDPR legal bases:</p>
 <ul>
     <li><strong>contract performance</strong> — providing access to paid content under a subscription;</li>
-    <li><strong>legitimate interests</strong> — maintaining a stable and secure App (including anonymous crash reports);</li>
-    <li><strong>legal obligations</strong> — accounting/tax obligations related to transactions, where applicable.</li>
+    <li><strong>legitimate interests</strong> — maintaining stable and secure operation of the App;</li>
+    <li><strong>legal obligations</strong> — accounting and tax records for transactions.</li>
 </ul>
 
 <h2>8. Retention</h2>
-<p>Subscription-related data (via the stores and RevenueCat) is retained <strong>only as long as necessary</strong> to provide the service, resolve payments/refunds, and meet legal obligations, after which it is deleted or anonymised.</p>
+<p>Subscription-related data (stores, Stripe, RevenueCat) is retained <strong>for as long as necessary</strong> to provide the service and meet legal obligations.</p>
 
 <h2>9. International transfers</h2>
-<p>Our service providers (e.g., RevenueCat) may process data outside the United Kingdom/EEA using appropriate safeguards (such as Standard Contractual Clauses). We use only vetted processors.</p>
+<p>Our providers (for example, RevenueCat and Stripe) may process data outside the United Kingdom/EEA in accordance with applicable legal safeguards.</p>
 
 <h2>10. Your rights</h2>
 <p>You have rights under the UK GDPR, including access, rectification, deletion, restriction, portability, and objection. To exercise your rights, contact us using the details below. For security, we may ask you to confirm ownership of the store account (Apple/Google) used for the subscription.</p>
 
+<h2 id="delete-data">10.1. Data deletion request</h2>
+<p><strong>App:</strong> LunaLife. <strong>Developer:</strong> KTECH DIGITAL LTD.</p>
+<p>In the mobile version of LunaLife, no separate user accounts are created. Data that may be deleted includes subscription-related data (RevenueCat, stores) and data saved by the user (for example, notes).</p>
+
+<ol>
+    <li>Send an email to <a href="mailto:info@ktech-digital.com">info@ktech-digital.com</a> from the Apple ID or Google account used for the purchase, and attach the receipt or order identifier.</li>
+    <li>We will delete the customer profile and related subscription events in RevenueCat and, where necessary, with other processors.</li>
+    <li>Data that must be retained by law (accounting/tax records) will be kept until the required retention period expires, usually up to 6 years.</li>
+</ol>
+
+<p><strong>Important:</strong> deleting data does not cancel your subscription. Cancellation must be done in the App Store, Google Play, or Stripe (for web subscriptions).</p>
+
 <h2>11. Children</h2>
-<p>The App is not intended for children under 13 (or the equivalent age in your jurisdiction). We do not knowingly collect personal data from children. If you believe a child has provided us with such data, contact us and we will remove it.</p>
+<p>The App is not intended for children under 16. We do not knowingly collect personal data from children.</p>
 
 <h2>12. User consent</h2>
 <p>By using LunaLife, you confirm that you have read and agree to this Privacy Policy.</p>
 
 <h2>13. Changes to this Policy</h2>
-<p>We may update this Policy from time to time. The current version will be published in the App and on our website with the effective date. By continuing to use the App after publication, you agree to the updated version.</p>
+<p>We may update this Policy from time to time. The new version will be published on the website and in the App.</p>
 
 <h2>14. Governing law</h2>
-<p>This Privacy Policy is governed by the laws of the United Kingdom. The courts of Scotland shall have exclusive jurisdiction.</p>
+<p>This Policy is governed by the laws of the United Kingdom. Disputes are subject to the jurisdiction of the courts of Scotland.</p>
 
 <h2>15. Attribution and content licensing</h2>
-<p>All digital content in the LunaLife App — including, without limitation, images, icons, day symbols, moon phases, and banners — is created by KTECH DIGITAL LTD with the help of AI-based tools. Certain video materials (e.g., a moon rotation clip) are licensed from <a href="https://pixabay.com/videos/moon-rotation-loop-craters-heaven-44335/" target="_blank">Pixabay</a> and used in accordance with its terms. Copying, reproducing, or distributing these materials without our prior written consent is prohibited.</p>
+<p>All digital content in LunaLife (images, icons, day symbols, banners) is created by KTECH DIGITAL LTD with the use of artificial intelligence-based tools. Certain video materials (for example, a moon rotation video) are used under Pixabay licence terms. Copying and distribution are prohibited.</p>
 
 <h2>16. Contact</h2>
-<p>If you have any questions about this Policy, please contact us:</p>
 <ul>
     <li>Email: info@ktech-digital.com</li>
     <li>Website: <a href="https://ktech-digital.com" target="_blank">https://ktech-digital.com</a></li>
