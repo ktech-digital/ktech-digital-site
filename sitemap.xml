@@ -5,36 +5,58 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
     http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- Sitemap manually optimized for SEO: KTech Digital -->
-
   <url>
     <loc>https://ktech-digital.com/</loc>
-    <lastmod>2025-07-05T12:00:00+00:00</lastmod>
+    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
 
   <url>
-    <loc>https://ktech-digital.com/blog/why-we-are-doing-this.html</loc>
-    <lastmod>2025-07-05T12:00:00+00:00</lastmod>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://ktech-digital.com/blog.html</loc>
-    <lastmod>2025-07-05T12:00:00+00:00</lastmod>
-    <priority>0.70</priority>
-  </url>
-
-  <url>
     <loc>https://ktech-digital.com/lunalife.html</loc>
-    <lastmod>2026-03-23T00:00:00+00:00</lastmod>
-    <priority>0.85</priority>
+    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
+    <priority>0.95</priority>
   </url>
 
   <url>
     <loc>https://ktech-digital.com/lunalife-ru.html</loc>
-    <lastmod>2026-03-23T00:00:00+00:00</lastmod>
-    <priority>0.85</priority>
+    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://ktech-digital.com/blog.html</loc>
+    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ktech-digital.com/blog/moon-calendar-guide.html</loc>
+    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
+    <priority>0.78</priority>
+  </url>
+
+  <url>
+    <loc>https://ktech-digital.com/blog/vedic-lunar-calendar-guide.html</loc>
+    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
+    <priority>0.78</priority>
+  </url>
+
+  <url>
+    <loc>https://ktech-digital.com/blog/lunnyy-kalendar-gid.html</loc>
+    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
+    <priority>0.78</priority>
+  </url>
+
+  <url>
+    <loc>https://ktech-digital.com/blog/vedicheskiy-lunnyy-kalendar.html</loc>
+    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
+    <priority>0.78</priority>
+  </url>
+
+  <url>
+    <loc>https://ktech-digital.com/blog/why-we-are-doing-this.html</loc>
+    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
   </url>
 
 </urlset>
