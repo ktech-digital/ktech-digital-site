@@ -19,8 +19,20 @@
 
   <url>
     <loc>https://ktech-digital.com/lunalife-ru.html</loc>
-    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
     <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://ktech-digital.com/lunalife-ru-details.html</loc>
+    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://ktech-digital.com/kniga-30-lunnykh-dnei.html</loc>
+    <lastmod>2026-04-09T00:00:00+00:00</lastmod>
+    <priority>0.88</priority>
   </url>
 
   <url>

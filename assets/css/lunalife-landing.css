@@ -534,7 +534,7 @@ a {
   right: 10%;
   width: 200px;
   height: 200px;
-  background: rgba(123, 166, 255, 0.18);
+  background: rgba(123, 166, 255, 0.12);
 }
 
 .hero-phone {
@@ -542,23 +542,25 @@ a {
   overflow: hidden;
   width: min(78vw, 320px);
   border-radius: 38px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.04);
   background: transparent;
-  box-shadow:
-    0 22px 46px rgba(0, 0, 0, 0.22),
-    0 0 0 1px rgba(255, 255, 255, 0.015);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
 }
 
 .hero-phone::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 24%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), transparent 24%);
   pointer-events: none;
 }
 
 .landing-section {
   padding: 26px 0 0;
+}
+
+#instant-value {
+  padding-top: 14px;
 }
 
 .section-header {
@@ -984,7 +986,7 @@ a {
   }
 
   .hero-phone {
-    width: min(100%, 320px);
+    width: min(100%, 340px);
   }
 
   .instant-layout {
@@ -1016,6 +1018,10 @@ a {
     padding-top: 40px;
   }
 
+  #instant-value {
+    padding-top: 24px;
+  }
+
   .hero-panel {
     padding: 42px 44px 36px;
   }
@@ -1025,7 +1031,7 @@ a {
   }
 
   .hero-phone {
-    width: 330px;
+    width: 360px;
   }
 
   .platform-stack {
@@ -1041,10 +1047,10 @@ a {
   }
 
   .screenshot-strip {
-    grid-auto-flow: unset;
-    grid-auto-columns: unset;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    overflow: visible;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(220px, 1fr);
+    grid-template-columns: none;
+    overflow-x: auto;
   }
 
   .trust-grid {

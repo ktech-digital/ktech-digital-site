@@ -541,10 +541,261 @@
   .ll-card { padding: 16px 14px; }
 }
 
+.book-cover-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(10, 16, 29, 0.92), rgba(23, 33, 51, 0.82));
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 18px 42px rgba(0,0,0,0.32);
+}
+
+.book-cover-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.book-page-title {
+  padding: 108px 0 34px 0;
+  text-align: left;
+  background:
+    radial-gradient(circle at top left, rgba(255,255,255,0.32), transparent 34%),
+    linear-gradient(135deg, #f7d8e8 0%, #ffd4ad 48%, #ff8b79 100%);
+}
+
+.book-page-title:before {
+  background:
+    linear-gradient(125deg, rgba(255,255,255,0.18), transparent 42%),
+    linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+}
+
+.book-page-title .container {
+  position: relative;
+}
+
+.book-page-title .breadcrumbs ol {
+  justify-content: flex-start;
+}
+
+.book-page-title .breadcrumbs a,
+.book-page-title .breadcrumbs li,
+.book-page-title .breadcrumbs ol li+li::before {
+  color: rgba(52, 16, 20, 0.78);
+}
+
+.book-platform-banner {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.75fr);
+  align-items: center;
+  gap: 28px;
+  padding: 30px 34px;
+  border-radius: 28px;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02)),
+    linear-gradient(135deg, rgba(255,242,245,0.86) 0%, rgba(255,225,190,0.92) 56%, rgba(255,140,120,0.88) 100%);
+  border: 1px solid rgba(116, 34, 40, 0.08);
+  box-shadow: 0 22px 46px rgba(87, 37, 25, 0.16);
+  overflow: hidden;
+}
+
+.book-platform-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(120deg, rgba(255,255,255,0.28), transparent 38%),
+    radial-gradient(circle at 75% 18%, rgba(255,255,255,0.22), transparent 28%);
+  pointer-events: none;
+}
+
+.book-platform-copy-wrap,
+.book-platform-cover {
+  position: relative;
+  z-index: 1;
+}
+
+.book-platform-brand {
+  margin: 0 0 18px 0;
+  color: #591919;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.book-platform-title,
+.book-platform-page-title {
+  margin: 0 0 14px 0;
+  color: #441316;
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.book-platform-page-title {
+  font-size: clamp(2.2rem, 4.3vw, 4.1rem);
+}
+
+.book-platform-author {
+  margin: 0 0 14px 0;
+  color: rgba(68, 19, 22, 0.90);
+  font-size: clamp(1.05rem, 1.4vw, 1.6rem);
+  font-weight: 500;
+}
+
+.book-platform-copy {
+  max-width: 42rem;
+  margin: 0;
+  color: rgba(68, 19, 22, 0.78);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.book-platform-actions {
+  margin-top: 20px;
+}
+
+.book-platform-primary,
+.book-platform-secondary {
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-weight: 600;
+}
+
+.book-platform-primary {
+  background: #5c1016;
+  border-color: #5c1016;
+  color: #fff;
+}
+
+.book-platform-primary:hover {
+  background: #4b0d12;
+  border-color: #4b0d12;
+  color: #fff;
+}
+
+.book-platform-secondary {
+  border-color: rgba(92,16,22,0.26);
+  color: #521418;
+  background: rgba(255,255,255,0.16);
+}
+
+.book-platform-secondary:hover {
+  border-color: rgba(92,16,22,0.42);
+  background: rgba(255,255,255,0.28);
+  color: #421114;
+}
+
+.book-platform-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-platform-cover img {
+  display: block;
+  width: min(100%, 250px);
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 18px 34px rgba(33, 16, 18, 0.20);
+}
+
+.book-platform-banner-page {
+  padding: 34px 38px;
+}
+
+.book-benefits-list {
+  margin: 0 0 16px 0;
+  padding-left: 1.15rem;
+  color: rgba(255,255,255,0.78);
+}
+
+.book-benefits-list li + li {
+  margin-top: 8px;
+}
+
+.book-store-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.book-store-card .ll-card-title {
+  margin-bottom: 8px;
+}
+
+.book-store-note {
+  margin: 0 0 14px 0;
+  color: rgba(255,255,255,0.68);
+  line-height: 1.45;
+}
+
+.book-callout {
+  margin-top: 14px;
+  color: rgba(255,255,255,0.64);
+  font-size: 0.92rem;
+}
+
+.book-inline-title {
+  margin: 0 0 10px 0;
+  color: rgba(255,255,255,0.96);
+  font-size: clamp(1.4rem, 2vw, 1.9rem);
+}
+
+.book-inline-copy {
+  max-width: 46rem;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.65;
+}
+
+@media (max-width: 991px) {
+  .book-platform-banner,
+  .book-platform-banner-page {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 24px;
+  }
+
+  .book-platform-cover {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .book-page-title {
+    padding: 94px 0 24px 0;
+  }
+
+  .book-platform-brand {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+  }
+
+  .book-platform-title,
+  .book-platform-page-title {
+    font-size: clamp(1.95rem, 10vw, 2.6rem);
+  }
+
+  .book-platform-author {
+    font-size: 1rem;
+  }
+
+  .book-platform-copy {
+    font-size: 0.95rem;
+  }
+
+  .book-platform-cover img {
+    width: min(72vw, 230px);
+  }
+
+  .book-store-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* lunalife page specifics */
 #lunalife-details {
   margin-top: -60px; /* try -16px to -40px */
 }
-
-
-
