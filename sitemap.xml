@@ -29,6 +29,15 @@
 
   <url>
     <loc>https://ktech-digital.com/lunalife-ru-details.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ktech-digital.com/lunalife-ru-details.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ktech-digital.com/lunalife-details.html" />
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://ktech-digital.com/lunalife-details.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ktech-digital.com/lunalife-details.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ktech-digital.com/lunalife-ru-details.html" />
     <lastmod>2026-04-21T00:00:00+00:00</lastmod>
   </url>
 

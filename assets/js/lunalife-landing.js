@@ -1,27 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
   var androidUrl = "https://play.google.com/store/apps/details?id=com.ktechdigital.lunalife";
   var webAppUrl = "https://lunalife.ktech-digital.com/";
+  var lang = (document.documentElement.lang || "").toLowerCase();
+  var isRussian = lang.indexOf("ru") === 0;
   var ua = navigator.userAgent || "";
   var isAndroid = /Android/i.test(ua);
   var isIOS =
     /iPhone|iPad|iPod/i.test(ua) ||
     (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
 
+  var copySuccessLabel = isRussian ? "Email скопирован" : "Email copied";
+
   var primaryConfig = {
-    label: isIOS ? "Открыть в Safari" : "Открыть LunaLife в браузере",
+    label: isIOS
+      ? (isRussian ? "Открыть в Safari" : "Open in Safari")
+      : (isRussian ? "Открыть LunaLife в браузере" : "Open LunaLife in browser"),
     href: webAppUrl,
     platform: isIOS ? "ios-web" : "web",
     hint: isIOS
-      ? "Откройте LunaLife в Safari и добавьте его на экран домой."
-      : "Для iPhone используйте Safari и добавление на экран домой. Для Android ниже есть установка через Google Play."
+      ? (isRussian
+          ? "Откройте LunaLife в Safari и добавьте его на экран домой."
+          : "Open LunaLife in Safari and add it to your Home Screen.")
+      : (isRussian
+          ? "Для iPhone используйте Safari и добавление на экран домой. Для Android ниже есть установка через Google Play."
+          : "For iPhone, use Safari and Add to Home Screen. For Android, install LunaLife from Google Play below.")
   };
 
   if (isAndroid) {
     primaryConfig = {
-      label: "Установить LunaLife",
+      label: isRussian ? "Установить LunaLife" : "Install LunaLife",
       href: androidUrl,
       platform: "android",
-      hint: "Откроется страница LunaLife в Google Play."
+      hint: isRussian
+        ? "Откроется страница LunaLife в Google Play."
+        : "This will open LunaLife in Google Play."
     };
   }
 
@@ -85,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(email).then(function () {
-          setTemporaryLabel("Email скопирован");
+          setTemporaryLabel(copySuccessLabel);
         }).catch(function () {
           setTemporaryLabel(email);
         });
