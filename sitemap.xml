@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
     http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
@@ -8,67 +9,74 @@
   <url>
     <loc>https://ktech-digital.com/</loc>
     <lastmod>2026-04-04T00:00:00+00:00</lastmod>
-    <priority>1.00</priority>
   </url>
 
   <url>
     <loc>https://ktech-digital.com/lunalife.html</loc>
-    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
-    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ktech-digital.com/lunalife.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ktech-digital.com/lunalife-ru.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ktech-digital.com/lunalife.html" />
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
   </url>
 
   <url>
     <loc>https://ktech-digital.com/lunalife-ru.html</loc>
-    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
-    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ktech-digital.com/lunalife-ru.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ktech-digital.com/lunalife.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ktech-digital.com/lunalife.html" />
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
   </url>
 
   <url>
     <loc>https://ktech-digital.com/lunalife-ru-details.html</loc>
-    <lastmod>2026-04-17T00:00:00+00:00</lastmod>
-    <priority>0.72</priority>
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
   </url>
 
   <url>
     <loc>https://ktech-digital.com/kniga-30-lunnykh-dnei.html</loc>
-    <lastmod>2026-04-09T00:00:00+00:00</lastmod>
-    <priority>0.88</priority>
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
   </url>
 
   <url>
     <loc>https://ktech-digital.com/blog.html</loc>
     <lastmod>2026-04-04T00:00:00+00:00</lastmod>
-    <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://ktech-digital.com/blog/moon-calendar-guide.html</loc>
-    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
-    <priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ktech-digital.com/blog/moon-calendar-guide.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ktech-digital.com/blog/lunnyy-kalendar-gid.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ktech-digital.com/blog/moon-calendar-guide.html" />
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
   </url>
 
   <url>
     <loc>https://ktech-digital.com/blog/vedic-lunar-calendar-guide.html</loc>
-    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
-    <priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ktech-digital.com/blog/vedic-lunar-calendar-guide.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ktech-digital.com/blog/vedicheskiy-lunnyy-kalendar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ktech-digital.com/blog/vedic-lunar-calendar-guide.html" />
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
   </url>
 
   <url>
     <loc>https://ktech-digital.com/blog/lunnyy-kalendar-gid.html</loc>
-    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
-    <priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ktech-digital.com/blog/lunnyy-kalendar-gid.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ktech-digital.com/blog/moon-calendar-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ktech-digital.com/blog/moon-calendar-guide.html" />
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
   </url>
 
   <url>
     <loc>https://ktech-digital.com/blog/vedicheskiy-lunnyy-kalendar.html</loc>
-    <lastmod>2026-04-04T00:00:00+00:00</lastmod>
-    <priority>0.78</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ktech-digital.com/blog/vedicheskiy-lunnyy-kalendar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ktech-digital.com/blog/vedic-lunar-calendar-guide.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ktech-digital.com/blog/vedic-lunar-calendar-guide.html" />
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
   </url>
 
   <url>
     <loc>https://ktech-digital.com/blog/why-we-are-doing-this.html</loc>
     <lastmod>2026-04-04T00:00:00+00:00</lastmod>
-    <priority>0.70</priority>
   </url>
 
 </urlset>
