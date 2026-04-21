@@ -451,15 +451,15 @@
 /* cards */
 /* LunaLife decision junction */
 .ll-junction {
-  padding: 18px;
+  padding: 16px;
   border-radius: 18px;
-  background: linear-gradient(135deg, rgba(11,15,26,0.35), rgba(21,26,37,0.25));
-  border: 1px solid rgba(255,255,255,0.08);
+  background: linear-gradient(180deg, rgba(248,250,253,0.96), rgba(244,247,251,0.92));
+  border: 1px solid rgba(27,47,69,0.08);
 }
 
 .ll-junction-kicker {
   margin: 0;
-  color: rgba(255,255,255,0.82);
+  color: rgba(27,47,69,0.72);
   font-weight: 600;
   letter-spacing: 0.1px;
 }
@@ -468,16 +468,16 @@
 .ll-card {
   padding: 18px 16px;
   border-radius: 18px;
-  background: linear-gradient(135deg, rgba(11,15,26,0.55), rgba(21,26,37,0.35));
-  border: 1px solid rgba(255,255,255,0.10);
-  box-shadow: 0 10px 28px rgba(0,0,0,0.25);
+  background: rgba(255,255,255,0.88);
+  border: 1px solid rgba(27,47,69,0.08);
+  box-shadow: 0 10px 24px rgba(19, 32, 50, 0.06);
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
 .ll-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(255,255,255,0.16);
-  box-shadow: 0 14px 34px rgba(0,0,0,0.30);
+  border-color: rgba(27,47,69,0.14);
+  box-shadow: 0 14px 30px rgba(19, 32, 50, 0.1);
 }
 
 .ll-card-icon {
@@ -487,21 +487,38 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255,255,255,0.85);
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.08);
+  color: rgba(27,47,69,0.82);
+  background: rgba(86,184,230,0.08);
+  border: 1px solid rgba(27,47,69,0.08);
   margin-bottom: 10px;
 }
 
 .ll-card-title {
   font-size: 1.05rem;
   margin: 0 0 6px 0;
-  color: rgba(255,255,255,0.92);
+  color: #1b2f45;
+}
+
+.ll-card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.ll-card-head .ll-card-icon {
+  margin-bottom: 0;
+  flex: 0 0 42px;
+}
+
+.ll-card-head .ll-card-title {
+  margin: 0;
+  padding-top: 4px;
 }
 
 .ll-card-text {
   margin: 0 0 14px 0;
-  color: rgba(255,255,255,0.72);
+  color: rgba(27,47,69,0.74);
   line-height: 1.45;
 }
 
@@ -511,7 +528,7 @@
 
 .ll-card-note {
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.55);
+  color: rgba(27,47,69,0.58);
 }
 
 /* Buttons */
@@ -525,14 +542,14 @@
   border-radius: 14px;
   padding: 10px 14px;
   font-weight: 600;
-  border-color: rgba(255,255,255,0.22) !important;
-  color: rgba(255,255,255,0.92) !important;
-  background: rgba(255,255,255,0.04) !important;
+  border-color: rgba(27,47,69,0.14) !important;
+  color: #1b2f45 !important;
+  background: rgba(255,255,255,0.92) !important;
 }
 
 .ll-btn-outline:hover {
-  border-color: rgba(255,255,255,0.34) !important;
-  background: rgba(255,255,255,0.07) !important;
+  border-color: rgba(27,47,69,0.24) !important;
+  background: rgba(86,184,230,0.08) !important;
 }
 
 /* Mobile spacing */
@@ -557,17 +574,17 @@
 }
 
 .book-page-title {
-  padding: 108px 0 34px 0;
+  padding: 0 0 20px 0;
   text-align: left;
   background:
-    radial-gradient(circle at top left, rgba(255,255,255,0.32), transparent 34%),
-    linear-gradient(135deg, #f7d8e8 0%, #ffd4ad 48%, #ff8b79 100%);
+    radial-gradient(circle at top left, rgba(255,255,255,0.22), transparent 34%),
+    linear-gradient(135deg, #eed6df 0%, #f2d8bc 52%, #e7a78f 100%);
 }
 
 .book-page-title:before {
   background:
-    linear-gradient(125deg, rgba(255,255,255,0.18), transparent 42%),
-    linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+    linear-gradient(125deg, rgba(255,255,255,0.12), transparent 42%),
+    linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
 }
 
 .book-page-title .container {
@@ -589,14 +606,14 @@
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.75fr);
   align-items: center;
-  gap: 28px;
-  padding: 30px 34px;
+  gap: 24px;
+  padding: 24px 28px;
   border-radius: 28px;
   background:
-    linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02)),
-    linear-gradient(135deg, rgba(255,242,245,0.86) 0%, rgba(255,225,190,0.92) 56%, rgba(255,140,120,0.88) 100%);
-  border: 1px solid rgba(116, 34, 40, 0.08);
-  box-shadow: 0 22px 46px rgba(87, 37, 25, 0.16);
+    linear-gradient(145deg, rgba(255,255,255,0.09), rgba(255,255,255,0.02)),
+    linear-gradient(135deg, rgba(248,238,241,0.88) 0%, rgba(245,226,202,0.92) 56%, rgba(225,160,137,0.86) 100%);
+  border: 1px solid rgba(116, 34, 40, 0.07);
+  box-shadow: 0 18px 36px rgba(87, 37, 25, 0.12);
   overflow: hidden;
 }
 
@@ -605,8 +622,8 @@
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(120deg, rgba(255,255,255,0.28), transparent 38%),
-    radial-gradient(circle at 75% 18%, rgba(255,255,255,0.22), transparent 28%);
+    linear-gradient(120deg, rgba(255,255,255,0.18), transparent 38%),
+    radial-gradient(circle at 75% 18%, rgba(255,255,255,0.14), transparent 28%);
   pointer-events: none;
 }
 
@@ -617,19 +634,19 @@
 }
 
 .book-platform-brand {
-  margin: 0 0 18px 0;
+  margin: 0 0 12px 0;
   color: #591919;
-  font-size: 1.75rem;
+  font-size: 1.55rem;
   font-weight: 700;
   line-height: 1;
 }
 
 .book-platform-title,
 .book-platform-page-title {
-  margin: 0 0 14px 0;
+  margin: 0 0 10px 0;
   color: #441316;
   font-size: clamp(2rem, 4vw, 3.6rem);
-  line-height: 0.98;
+  line-height: 0.94;
   font-weight: 700;
   letter-spacing: -0.03em;
 }
@@ -639,7 +656,7 @@
 }
 
 .book-platform-author {
-  margin: 0 0 14px 0;
+  margin: 0 0 10px 0;
   color: rgba(68, 19, 22, 0.90);
   font-size: clamp(1.05rem, 1.4vw, 1.6rem);
   font-weight: 500;
@@ -649,12 +666,12 @@
   max-width: 42rem;
   margin: 0;
   color: rgba(68, 19, 22, 0.78);
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 0.98rem;
+  line-height: 1.55;
 }
 
 .book-platform-actions {
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .book-platform-primary,
@@ -703,7 +720,7 @@
 }
 
 .book-platform-banner-page {
-  padding: 34px 38px;
+  padding: 26px 30px;
 }
 
 .book-benefits-list {
@@ -719,7 +736,7 @@
 .book-store-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+  gap: 16px;
 }
 
 .book-store-card .ll-card-title {
@@ -728,34 +745,129 @@
 
 .book-store-note {
   margin: 0 0 14px 0;
-  color: rgba(255,255,255,0.68);
+  color: rgba(27,47,69,0.68);
   line-height: 1.45;
 }
 
 .book-callout {
   margin-top: 14px;
-  color: rgba(255,255,255,0.64);
+  color: rgba(27,47,69,0.62);
   font-size: 0.92rem;
 }
 
 .book-inline-title {
   margin: 0 0 10px 0;
-  color: rgba(255,255,255,0.96);
+  color: #1b2f45;
   font-size: clamp(1.4rem, 2vw, 1.9rem);
 }
 
 .book-inline-copy {
   max-width: 46rem;
-  color: rgba(255,255,255,0.72);
+  color: rgba(27,47,69,0.74);
   line-height: 1.65;
+}
+
+.book-page .content h2 {
+  margin-top: 1.7rem;
+  margin-bottom: 0.75rem;
+}
+
+.book-page {
+  background:
+    radial-gradient(circle at top left, rgba(238, 214, 223, 0.38), transparent 28%),
+    radial-gradient(circle at 88% 10%, rgba(231, 167, 143, 0.16), transparent 22%),
+    linear-gradient(180deg, #fbf5f1 0%, #f8f2ed 42%, #f6f0ea 100%);
+}
+
+.book-page .main {
+  background: transparent;
+}
+
+.book-page .blog-details.section {
+  padding-top: 24px;
+}
+
+.book-page .blog-details .article {
+  background: rgba(255, 251, 247, 0.86);
+  border: 1px solid rgba(118, 54, 44, 0.08);
+  border-radius: 28px;
+  box-shadow: 0 16px 36px rgba(108, 57, 42, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.book-page .content p {
+  line-height: 1.62;
+}
+
+.book-page .content .ll-junction {
+  margin-top: 1rem !important;
+  margin-bottom: 2rem !important;
+  padding: 14px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255, 247, 241, 0.92), rgba(251, 242, 233, 0.88));
+  border-color: rgba(118, 54, 44, 0.08);
+}
+
+.book-page .content .ll-card {
+  padding: 16px 14px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255, 252, 248, 0.96), rgba(251, 244, 237, 0.92));
+  border-color: rgba(118, 54, 44, 0.08);
+  box-shadow: 0 10px 22px rgba(108, 57, 42, 0.06);
+}
+
+.book-page .content .ll-card:hover {
+  box-shadow: 0 14px 28px rgba(108, 57, 42, 0.1);
+}
+
+.book-page .content .ll-card-title {
+  margin-bottom: 5px;
+}
+
+.book-page .content .book-store-grid {
+  margin-top: 1rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.book-page .sidebar .widget-item {
+  padding: 18px 18px 16px;
+  border-radius: 22px;
+  background: rgba(255, 250, 245, 0.88);
+  border: 1px solid rgba(118, 54, 44, 0.08);
+  box-shadow: 0 10px 24px rgba(108, 57, 42, 0.06);
+}
+
+.book-page .sidebar .widget-title {
+  color: #5a1c1f;
+  margin-bottom: 16px;
+}
+
+.book-page .sidebar .widget-title:before {
+  background: rgba(90, 28, 31, 0.08);
+}
+
+.book-page .sidebar .widget-title:after {
+  background: #d69478;
+}
+
+.book-page .sidebar .categories-widget ul li {
+  padding-bottom: 12px;
+}
+
+.book-page .sidebar .categories-widget ul a {
+  color: rgba(68, 19, 22, 0.78);
+}
+
+.book-page .sidebar .categories-widget ul a:hover {
+  color: #a35a51;
 }
 
 @media (max-width: 991px) {
   .book-platform-banner,
   .book-platform-banner-page {
     grid-template-columns: 1fr;
-    gap: 22px;
-    padding: 24px;
+    gap: 18px;
+    padding: 20px;
   }
 
   .book-platform-cover {
@@ -765,12 +877,21 @@
 
 @media (max-width: 767px) {
   .book-page-title {
-    padding: 94px 0 24px 0;
+    padding: 0 0 14px 0;
+  }
+
+  .book-page .blog-details.section {
+    padding-top: 18px;
+  }
+
+  .book-page .blog-details .article {
+    border-radius: 22px;
+    padding: 22px 18px;
   }
 
   .book-platform-brand {
-    font-size: 1.35rem;
-    margin-bottom: 12px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
   }
 
   .book-platform-title,
@@ -783,19 +904,241 @@
   }
 
   .book-platform-copy {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
   }
 
   .book-platform-cover img {
-    width: min(72vw, 230px);
+    width: min(68vw, 220px);
   }
 
   .book-store-grid {
     grid-template-columns: 1fr;
   }
+
+  .lunalife-detail-page .content .ll-card-head {
+    gap: 10px;
+  }
+
+  .lunalife-detail-page .content .ll-card-head .ll-card-icon {
+    flex-basis: 38px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .lunalife-detail-page .content .ll-card-title {
+    font-size: 0.96rem;
+  }
 }
 
 /* lunalife page specifics */
 #lunalife-details {
-  margin-top: -60px; /* try -16px to -40px */
+  margin-top: 0;
+}
+
+.lunalife-detail-page {
+  background: #ffffff;
+}
+
+.lunalife-detail-page .main {
+  background: transparent;
+}
+
+.lunalife-detail-page .blog-details.section {
+  padding-top: 0;
+}
+
+.lunalife-detail-page .blog-details .article {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.lunalife-detail-title {
+  padding: 112px 0 30px;
+  background-position: center 30%;
+}
+
+.lunalife-detail-title:before {
+  background: linear-gradient(180deg, rgba(10, 16, 29, 0.64), rgba(10, 16, 29, 0.38));
+}
+
+.lunalife-detail-title h1 {
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  margin-bottom: 12px;
+}
+
+.lunalife-detail-title .breadcrumbs ol {
+  justify-content: center;
+}
+
+.ll-inline-links {
+  color: rgba(27,47,69,0.66);
+  line-height: 1.6;
+}
+
+.ll-inline-links a {
+  font-weight: 600;
+}
+
+.lunalife-detail-page .content h2 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.lunalife-detail-page .content p,
+.lunalife-detail-page .content li {
+  line-height: 1.66;
+}
+
+.lunalife-detail-page .content .ll-junction {
+  margin-top: 1rem !important;
+  margin-bottom: 2rem !important;
+  padding: 14px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(248, 251, 255, 0.96), rgba(242, 247, 252, 0.9));
+  border-color: rgba(27, 47, 69, 0.08);
+}
+
+.lunalife-detail-page .content .ll-junction-book {
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 28px;
+  box-shadow: none;
+}
+
+.lunalife-detail-page .content .ll-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(246, 249, 253, 0.94));
+  border-color: rgba(27, 47, 69, 0.08);
+  box-shadow: 0 10px 22px rgba(23, 38, 61, 0.06);
+}
+
+.lunalife-detail-page .content .ll-card:hover {
+  box-shadow: 0 14px 28px rgba(23, 38, 61, 0.1);
+}
+
+.lunalife-detail-page .content .ll-card-icon {
+  color: rgba(27, 47, 69, 0.82);
+  background: rgba(86, 184, 230, 0.09);
+  border-color: rgba(27, 47, 69, 0.08);
+}
+
+.lunalife-detail-page .content .ll-card-title {
+  color: #173350;
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.lunalife-detail-page .content .ll-card-head {
+  align-items: center;
+}
+
+.lunalife-detail-page .content .ll-card-head .ll-card-title {
+  margin: 0;
+  padding-top: 0;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.lunalife-detail-page .content .ll-card-text {
+  color: rgba(27, 47, 69, 0.74);
+}
+
+.lunalife-detail-page #planningAccordionRu {
+  margin-bottom: 0.75rem;
+}
+
+.lunalife-detail-page #planningAccordionRu + h2 {
+  margin-top: 0.9rem;
+}
+
+.lunalife-detail-page .sidebar .widget-item {
+  padding: 18px 18px 16px;
+  border-radius: 22px;
+  background: rgba(250, 252, 255, 0.88);
+  border: 1px solid rgba(27, 47, 69, 0.08);
+  box-shadow: 0 10px 24px rgba(23, 38, 61, 0.06);
+}
+
+.lunalife-detail-page .sidebar .widget-title {
+  margin-bottom: 16px;
+  color: #173350;
+}
+
+.lunalife-detail-page .sidebar .widget-title:before {
+  background: rgba(27, 47, 69, 0.08);
+}
+
+.lunalife-detail-page .sidebar .widget-title:after {
+  background: #56b8e6;
+}
+
+.lunalife-detail-page .sidebar .categories-widget ul li {
+  padding-bottom: 12px;
+}
+
+.lunalife-detail-page .sidebar .categories-widget ul a {
+  color: rgba(27, 47, 69, 0.78);
+}
+
+.lunalife-detail-page .sidebar .categories-widget ul a:hover {
+  color: #56b8e6;
+}
+
+.footer-resource {
+  padding: 24px 0 34px;
+}
+
+.footer-resource-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 0 0;
+  border-top: 1px solid rgba(27,47,69,0.08);
+}
+
+.footer-resource-brand {
+  margin: 0;
+  color: rgba(43,24,13,0.74);
+  line-height: 1.6;
+}
+
+.footer-resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+}
+
+.footer-resource-links a {
+  color: #1b2f45;
+  font-size: 0.94rem;
+}
+
+.footer-resource-links a:hover,
+.footer-resource-links a:focus-visible {
+  color: #56b8e6;
+}
+
+@media (min-width: 768px) {
+  .footer-resource-panel {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .lunalife-detail-title {
+    padding: 96px 0 22px;
+  }
+
+  .lunalife-detail-page .blog-details.section {
+    padding-top: 0;
+  }
+
+  .lunalife-detail-page .blog-details .article {
+    padding: 22px 18px;
+  }
 }

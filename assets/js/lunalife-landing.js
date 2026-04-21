@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
     (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
 
   var primaryConfig = {
-    label: "Открыть веб-версию",
+    label: isIOS ? "Открыть в Safari" : "Открыть LunaLife в браузере",
     href: webAppUrl,
     platform: isIOS ? "ios-web" : "web",
     hint: isIOS
-      ? "Откроется веб-версия LunaLife. На iPhone откройте страницу в Safari и добавьте её на экран домой."
-      : "Откроется веб-версия LunaLife. Для Android ниже есть отдельная установка через Google Play."
+      ? "Откройте LunaLife в Safari и добавьте его на экран домой."
+      : "Для iPhone используйте Safari и добавление на экран домой. Для Android ниже есть установка через Google Play."
   };
 
   if (isAndroid) {
