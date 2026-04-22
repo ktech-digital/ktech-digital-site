@@ -1050,7 +1050,15 @@
   margin-bottom: 0.75rem;
 }
 
+.lunalife-detail-page #planningAccordion {
+  margin-bottom: 0.75rem;
+}
+
 .lunalife-detail-page #planningAccordionRu + h2 {
+  margin-top: 0.9rem;
+}
+
+.lunalife-detail-page #planningAccordion + h2 {
   margin-top: 0.9rem;
 }
 
