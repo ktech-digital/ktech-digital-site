@@ -721,6 +721,15 @@
 
 .book-platform-banner-page {
   padding: 26px 30px;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.book-platform-banner-page::after {
+  display: none;
 }
 
 .book-benefits-list {
@@ -773,10 +782,7 @@
 }
 
 .book-page {
-  background:
-    radial-gradient(circle at top left, rgba(238, 214, 223, 0.38), transparent 28%),
-    radial-gradient(circle at 88% 10%, rgba(231, 167, 143, 0.16), transparent 22%),
-    linear-gradient(180deg, #fbf5f1 0%, #f8f2ed 42%, #f6f0ea 100%);
+  background: #ffffff;
 }
 
 .book-page .main {
@@ -788,11 +794,19 @@
 }
 
 .book-page .blog-details .article {
-  background: rgba(255, 251, 247, 0.86);
-  border: 1px solid rgba(118, 54, 44, 0.08);
-  border-radius: 28px;
-  box-shadow: 0 16px 36px rgba(108, 57, 42, 0.08);
-  backdrop-filter: blur(8px);
+  background: #ffffff !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+.book-page .blog-details .container .article {
+  background: #ffffff !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
 }
 
 .book-page .content p {
@@ -885,8 +899,11 @@
   }
 
   .book-page .blog-details .article {
-    border-radius: 22px;
-    padding: 22px 18px;
+    padding: 22px 18px !important;
+  }
+
+  .book-page .blog-details .container .article {
+    padding: 22px 18px !important;
   }
 
   .book-platform-brand {
