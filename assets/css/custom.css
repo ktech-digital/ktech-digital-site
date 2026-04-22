@@ -795,11 +795,6 @@
   line-height: 1.65;
 }
 
-.book-page .content h2 {
-  margin-top: 1.7rem;
-  margin-bottom: 0.75rem;
-}
-
 .book-page {
   background: #ffffff;
 }
@@ -831,7 +826,7 @@
 .book-page .content p {
   line-height: 1.62;
   color: rgba(68,19,22,0.88);
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.45rem;
 }
 
 .book-page .content p:last-child {
@@ -847,7 +842,15 @@
 }
 
 .book-page .content .book-section {
-  margin-bottom: 1.05rem;
+  margin-bottom: 0.08rem;
+}
+
+.book-page .content .book-section-intro {
+  margin-bottom: 0 !important;
+}
+
+.book-page .content .book-section-intro p:last-child {
+  margin-bottom: 0 !important;
 }
 
 .book-page .content .book-section-kicker {
@@ -880,6 +883,12 @@
   letter-spacing: -0.02em;
 }
 
+.book-page .content .book-section-title + p,
+.book-page .content .book-inline-title + p,
+.book-page .content .book-section-title + .row {
+  margin-top: 16px !important;
+}
+
 .book-page .content .book-section-title-sm {
   font-size: clamp(1.42rem, 2.7vw, 1.95rem);
 }
@@ -906,12 +915,29 @@
 }
 
 .book-page .content .ll-junction {
-  margin-top: 0.7rem !important;
-  margin-bottom: 0.95rem !important;
-  padding: 12px;
+  margin-top: 0.12rem !important;
+  margin-bottom: 0.4rem !important;
+  padding: 10px;
   border-radius: 22px;
   background: linear-gradient(180deg, rgba(255, 247, 241, 0.92), rgba(251, 242, 233, 0.88));
   border-color: rgba(118, 54, 44, 0.08);
+}
+
+.book-page .content .book-section + .ll-junction {
+  margin-top: -0.2rem !important;
+}
+
+.book-page .content .ll-junction + .book-section {
+  margin-top: 0 !important;
+}
+
+.book-page .content > .book-section + .ll-junction,
+.book-page .content > .ll-junction + .book-section {
+  margin-top: 0 !important;
+}
+
+.book-page .content .book-section-intro + .book-proof-block {
+  margin-top: -0.52rem !important;
 }
 
 .book-page .content .ll-card {
@@ -972,15 +998,15 @@
 }
 
 .book-page .content .book-proof-block {
-  background: linear-gradient(180deg, rgba(255, 246, 239, 0.96), rgba(249, 238, 229, 0.92));
+  background: rgba(255, 252, 248, 0.96);
 }
 
 .book-page .content .book-proof-block-soft {
-  background: linear-gradient(180deg, rgba(255, 249, 244, 0.95), rgba(250, 241, 234, 0.9));
+  background: rgba(255, 252, 248, 0.96);
 }
 
 .book-page .content .book-companion-callout {
-  margin-top: 0.7rem !important;
+  margin-top: 0.18rem !important;
 }
 
 .book-page .content .book-companion-card {
@@ -1011,14 +1037,19 @@
 }
 
 .book-page .content .book-store-grid {
-  margin-top: 0.7rem !important;
-  margin-bottom: 1.4rem !important;
+  margin-top: 0.2rem !important;
+  margin-bottom: 0.8rem !important;
   gap: 12px;
 }
 
 .book-page .content .book-store-card {
   display: flex;
   flex-direction: column;
+  padding-bottom: 16px;
+}
+
+.book-page .content .book-store-card .ll-card-actions {
+  margin-top: 14px;
 }
 
 .book-page .content .book-store-card-primary {
@@ -1048,7 +1079,7 @@
 }
 
 .book-page .content .book-author-section {
-  padding-top: 4px;
+  padding-top: 2px;
   border-top: 1px solid rgba(118, 54, 44, 0.08);
 }
 
@@ -1134,7 +1165,7 @@
   }
 
   .book-page .content .book-section {
-    margin-bottom: 0.95rem;
+    margin-bottom: 0.06rem;
   }
 
   .book-page .content .book-section-title {
@@ -1149,9 +1180,21 @@
     font-size: 0.98rem;
   }
 
+  .book-page .content .book-section-title + p,
+  .book-page .content .book-inline-title + p,
+  .book-page .content .book-section-title + .row {
+    margin-top: 14px !important;
+  }
+
   .book-page .content .ll-junction {
-    padding: 10px;
+    margin-top: 0.08rem !important;
+    margin-bottom: 0.32rem !important;
+    padding: 9px;
     border-radius: 20px;
+  }
+
+  .book-page .content .book-section-intro + .book-proof-block {
+    margin-top: -0.62rem !important;
   }
 
   .book-platform-cover img {
