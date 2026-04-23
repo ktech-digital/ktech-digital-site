@@ -244,7 +244,7 @@ a {
 .hero-title {
   margin-top: 16px;
   font-size: clamp(2.45rem, 8.6vw, 4.35rem);
-  max-width: 10.8ch;
+  max-width: 12.2ch;
 }
 
 .section-title,
@@ -559,6 +559,10 @@ a {
   padding: 26px 0 0;
 }
 
+.landing-section-tight {
+  padding-top: 18px;
+}
+
 #instant-value {
   padding-top: 14px;
 }
@@ -577,6 +581,61 @@ a {
 
 .instant-layout {
   align-items: center;
+}
+
+.signal-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.signal-card {
+  position: relative;
+  padding: 18px 18px 18px 50px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015)),
+    rgba(255, 255, 255, 0.02);
+}
+
+.signal-card::before,
+.signal-card::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+}
+
+.signal-card::before {
+  top: 20px;
+  left: 18px;
+  width: 18px;
+  height: 18px;
+  background: rgba(242, 194, 107, 0.12);
+  border: 1px solid rgba(242, 194, 107, 0.22);
+}
+
+.signal-card::after {
+  top: 25px;
+  left: 23px;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, var(--ll-gold), var(--ll-coral));
+  box-shadow: 0 0 10px rgba(242, 194, 107, 0.28);
+}
+
+.signal-card strong {
+  display: block;
+  font-size: 0.97rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.recognition-note {
+  margin: 18px 0 0;
+  max-width: 42rem;
+  color: rgba(242, 245, 251, 0.8);
+  font-size: 1rem;
+  line-height: 1.68;
 }
 
 .instant-story {
@@ -713,6 +772,41 @@ a {
   line-height: 1.56;
 }
 
+.quote-panel {
+  padding: 26px 22px;
+  border-radius: var(--ll-radius);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
+    rgba(255, 255, 255, 0.03);
+  box-shadow: var(--ll-shadow);
+}
+
+.quote-kicker {
+  margin: 0 0 12px;
+  color: var(--ll-gold-soft);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.quote-text {
+  margin: 0;
+  color: var(--ll-text);
+  font-family: var(--ll-display-font);
+  font-size: clamp(1.7rem, 4.2vw, 2.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.quote-support {
+  margin: 14px 0 0;
+  max-width: 44rem;
+  color: var(--ll-muted);
+  line-height: 1.66;
+}
+
 .screenshot-strip {
   display: grid;
   grid-auto-flow: column;
@@ -776,6 +870,15 @@ a {
   padding: 20px;
 }
 
+.trust-title {
+  margin: 14px 0 0;
+  color: var(--ll-text);
+  font-family: var(--ll-display-font);
+  font-size: clamp(1.65rem, 4.4vw, 2.45rem);
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+}
+
 .trust-grid {
   display: grid;
   gap: 10px;
@@ -794,6 +897,36 @@ a {
   font-size: 0.96rem;
   font-weight: 800;
   line-height: 1.45;
+}
+
+.trust-point span {
+  display: block;
+  margin-top: 8px;
+  color: var(--ll-muted);
+  line-height: 1.56;
+}
+
+.reassurance-strip {
+  display: grid;
+  gap: 12px;
+}
+
+.reassurance-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
+  padding: 16px 18px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015)),
+    rgba(255, 255, 255, 0.02);
+  color: rgba(242, 245, 251, 0.96);
+  font-size: 0.97rem;
+  font-weight: 800;
+  line-height: 1.4;
 }
 
 .book-support-panel {
@@ -1053,12 +1186,24 @@ a {
     grid-template-columns: minmax(0, 0.92fr) minmax(280px, 0.86fr);
   }
 
+  .signal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .signal-grid-benefits {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .benefit-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .trust-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .reassurance-strip {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .book-support-panel {
@@ -1081,6 +1226,10 @@ a {
 @media (min-width: 992px) {
   .landing-section {
     padding-top: 40px;
+  }
+
+  .landing-section-tight {
+    padding-top: 26px;
   }
 
   #instant-value {
@@ -1137,6 +1286,7 @@ a {
 }
 
 @keyframes ll-float {
+
   0%,
   100% {
     transform: translateY(0);

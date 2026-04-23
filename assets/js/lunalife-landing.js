@@ -41,7 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelectorAll("[data-primary-cta]").forEach(function (link) {
     link.href = primaryConfig.href;
-    link.textContent = primaryConfig.label;
+    if (link.getAttribute("data-lock-label") !== "true") {
+      link.textContent = primaryConfig.label;
+    }
     link.dataset.platformTarget = primaryConfig.platform;
   });
 
